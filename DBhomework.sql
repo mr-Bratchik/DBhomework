@@ -47,7 +47,7 @@ artist_id INT REFERENCES Artists(id),
 PRIMARY KEY (album_id, artist_id)
 );
 
--- Песни сборников
+-- Песни в сборниках
 CREATE TABLE IF NOT EXISTS Collection_tracks(
 track_id INT REFERENCES Tracks(id),
 collection_id INT REFERENCES Collections(id),
